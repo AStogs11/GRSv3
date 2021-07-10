@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "GnauRacingSheet_v3", "GnauRacingSheet_v3\GnauRacingSheet_v3.dtproj", "{83DCD5E0-AE88-4F44-B866-A3CD0288BE5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{085B1853-C2BE-4DBB-8588-D17BC8FF8888}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Python\DatabaseScriptv3.ps1 = ..\..\..\Desktop\Python\DatabaseScriptv3.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83DCD5E0-AE88-4F44-B866-A3CD0288BE5A}.Development|Default.ActiveCfg = Development
+		{83DCD5E0-AE88-4F44-B866-A3CD0288BE5A}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67B56104-BDBF-42DB-AD03-44119166AD01}
+	EndGlobalSection
+EndGlobal
