@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{7F234B3E-C81A-483E-8BF5-01CB8FC98695}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{2A794C4F-B6E5-41D7-B791-DAB06E5FD1D3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -262,8 +262,7 @@
       DTS:DataType="8"
       DTS:Description="Archive Folder for Downloaded files"
       DTS:DTSID="{1E06A0EA-1640-4B5C-8EB5-F451633EE606}"
-      DTS:ObjectName="Archive_Folder"
-      DTS:Required="True">
+      DTS:ObjectName="Archive_Folder">
       <DTS:Property
         DTS:DataType="8"
         DTS:Name="ParameterValue">C:\Users\Alex\Desktop\Handicap_data\Archive\\</DTS:Property>
@@ -273,8 +272,7 @@
       DTS:DataType="8"
       DTS:Description="Data Folder for Downloaded files"
       DTS:DTSID="{DBDE901B-251E-4DE3-AAF8-856D2BA1E3E2}"
-      DTS:ObjectName="Data_Folder"
-      DTS:Required="True">
+      DTS:ObjectName="Data_Folder">
       <DTS:Property
         DTS:DataType="8"
         DTS:Name="ParameterValue">C:\Users\Alex\Desktop\Handicap_data\Data\\</DTS:Property>
@@ -284,8 +282,7 @@
       DTS:DataType="8"
       DTS:Description="Drop Folder for Downloaded files"
       DTS:DTSID="{50AA0AAC-3384-41B0-B084-E9D922416005}"
-      DTS:ObjectName="Drop_Folder"
-      DTS:Required="True">
+      DTS:ObjectName="Drop_Folder">
       <DTS:Property
         DTS:DataType="8"
         DTS:Name="ParameterValue">C:\Users\Alex\Desktop\Handicap_data\Drop\\</DTS:Property>
@@ -294,13 +291,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Data Flow - Insert Bulk - Races"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{B6FC4C18-5B8E-4FE8-983C-A54D1F497BB0}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Data Flow - Insert Bulk - Races"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -308,7 +305,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Data Flow - Insert Bulk - Races\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -328,25 +325,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Races]"
                   connectionManagerRefId="Package.ConnectionManagers[Races]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]"
                       name="Column 0"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -361,14 +358,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]"
                       name="Column 1"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -383,14 +380,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 2]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 2]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]"
                       name="Column 2"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -405,14 +402,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 3]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 3]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]"
                       name="Column 3"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -427,14 +424,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 4]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 4]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]"
                       name="Column 4"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -449,14 +446,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]"
                       name="Column 5"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -471,14 +468,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]"
                       name="Column 6"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -493,14 +490,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]"
                       name="Column 7"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -515,14 +512,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 8]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 8]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]"
                       name="Column 8"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -537,14 +534,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 9]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 9]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]"
                       name="Column 9"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -559,14 +556,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 10]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 10]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 10]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 10]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 10]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 10]"
                       name="Column 10"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -581,14 +578,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 11]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 11]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 11]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 11]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 11]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 11]"
                       name="Column 11"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -603,14 +600,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 12]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 12]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 12]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 12]"
                       length="5000"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 12]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 12]"
                       name="Column 12"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -625,14 +622,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 13]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 13]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
                       length="500"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 13]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 13]"
                       name="Column 13"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -647,14 +644,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 14]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 14]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 14]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 14]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 14]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 14]"
                       name="Column 14"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -669,14 +666,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 15]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 15]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 15]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 15]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 15]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 15]"
                       name="Column 15"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -691,14 +688,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 16]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 16]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 16]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 16]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 16]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 16]"
                       name="Column 16"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -713,14 +710,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 17]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 17]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 17]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 17]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 17]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 17]"
                       name="Column 17"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -735,14 +732,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 18]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 18]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 18]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 18]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 18]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 18]"
                       name="Column 18"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -757,14 +754,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 19]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 19]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 19]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 19]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 19]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 19]"
                       name="Column 19"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -779,14 +776,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 20]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 20]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 20]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 20]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 20]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 20]"
                       name="Column 20"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -801,14 +798,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 21]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 21]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 21]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 21]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 21]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 21]"
                       name="Column 21"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -823,14 +820,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 22]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 22]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 22]"
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 22]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 22]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 22]"
                       name="Column 22"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -848,139 +845,139 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 0" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 1]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 1" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 2]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 2]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 3]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 3]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 3" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 4]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 4]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 4" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 5" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 6]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 6" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 7" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 8]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 8]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 8" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 9]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 9]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 9" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 10]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 10]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 11]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 11]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 11" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 12]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 12]"
                       codePage="1252"
                       dataType="str"
                       length="5000"
                       name="Column 12" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Column 13" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 14]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 14]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 14" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 15]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 15]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 15" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 16]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 16]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 16" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 17]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 17]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 17" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 18]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 18]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 18" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 19]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 19]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 19" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 20]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 20]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 20" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 21]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 21]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 21" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 22]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 22]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -988,27 +985,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1017,7 +1014,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -1074,7 +1071,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[GnauRacingDBv3]"
                   connectionManagerRefId="Package.ConnectionManagers[GnauRacingDBv3]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1082,332 +1079,332 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 0]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 0]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 0"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 0]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 1]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 1]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 1"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 1]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 2]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 2]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 2"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_num]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_num]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 2]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 3]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 3]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 3"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance_in_yards]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance_in_yards]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 3]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 4]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 4]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 4"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surface]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surface]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 4]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 5]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 5]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 5"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[All_Weather_Surface_flag]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[All_Weather_Surface_flag]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 5]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 6]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 6]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 6"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Type]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Type]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 6]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 7]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 7]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 7"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age_Sex_Restrictions]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age_Sex_Restrictions]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 7]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 8]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 8]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 8"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Race_Type]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Race_Type]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 8]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 9]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 9]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 9"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Purse]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Purse]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 9]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 10]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 10]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 10"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claiming_Price]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 10]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claiming_Price]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 10]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 11]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 11]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 11"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track_Record]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 11]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track_Record]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 11]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 13]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 13]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="500"
                       cachedName="Column 13"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Lasix_list]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 13]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Lasix_list]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 13]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 14]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 14]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 14"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Bute_list]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 14]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Bute_list]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 14]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 15]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 15]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 15"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Coupled_list]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 15]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Coupled_list]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 15]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 16]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 16]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 16"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Mutuel_list]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 16]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Mutuel_list]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 16]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 17]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 17]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 17"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_trackcode]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 17]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_trackcode]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 17]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 18]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 18]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 18"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_track_race_num]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 18]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_track_race_num]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 18]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 19]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 19]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 19"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 19]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 19]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 20]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 20]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 20"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_1]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 20]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_1]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 20]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 21]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 21]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 21"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_2]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 21]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_2]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 21]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 22]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 22]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column 22"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostTimes(byregion)]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 22]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostTimes(byregion)]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 22]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 12]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column 12]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="5000"
                       cachedName="Column 12"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Conditions]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Column 12]" />
+                      externalMetadataColumnId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Conditions]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output].Columns[Column 12]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Track" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_num]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_num]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Race_num" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance_in_yards]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance_in_yards]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Distance_in_yards" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surface]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surface]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Surface" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[All_Weather_Surface_flag]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[All_Weather_Surface_flag]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="All_Weather_Surface_flag" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Type]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Type]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Race_Type" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age_Sex_Restrictions]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age_Sex_Restrictions]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Age_Sex_Restrictions" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Race_Type]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Race_Type]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Todays_Race_Type" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Purse]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Purse]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Purse" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claiming_Price]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claiming_Price]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Claiming_Price" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track_Record]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Track_Record]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Track_Record" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Conditions]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Race_Conditions]"
                       codePage="1252"
                       dataType="text"
                       name="Race_Conditions" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Lasix_list]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Lasix_list]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Todays_Lasix_list" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Bute_list]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Bute_list]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Todays_Bute_list" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Coupled_list]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Coupled_list]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Todays_Coupled_list" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Mutuel_list]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Todays_Mutuel_list]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Todays_Mutuel_list" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_trackcode]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_trackcode]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Simulcast_host_trackcode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_track_race_num]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Simulcast_host_track_race_num]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Simulcast_host_track_race_num" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Reserved" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_1]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_1]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Reserved_1" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_2]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reserved_2]"
                       codePage="1252"
                       dataType="str"
                       length="500"
                       name="Reserved_2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostTimes(byregion)]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostTimes(byregion)]"
                       codePage="1252"
                       dataType="str"
                       length="500"
@@ -1417,22 +1414,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1443,15 +1440,192 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Data Flow - Insert Bulk - Races.Paths[Flat File Source Output]"
+              endId="Package\Data Flow - Insert Bulk - Races\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow - Insert Bulk - Races\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insert Raw - Races"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Insert Raw"
+      DTS:DTSID="{93E02A9C-F5E2-4D2D-BD07-EB1FAD6C283F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insert Raw - Races"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="Exec [util].[InsertRaw] @Tableid = 1000" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Log - Bulk Races Loaded"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0a0beb4e-8f40-45a2-a91c-c0ca445bc6e0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Log - Bulk Races Loaded"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="Declare @BatchID int&#xA; , @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA; , @fileID = max(fileID) &#xA; From [Log].[v_ProcessStatus]&#xA; Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;  @Source =  'Races.dtsx',&#xA;  @LogTableID = 1000,&#xA;  @LogTableName = '[Bulk].[Races]', &#xA;  @LogBatchID = @BatchID,&#xA;  @LogFileID = @fileID, &#xA;  @ErrorFlag = 0,&#xA;  @Msg = 'Races File Loaded to [Bulk]';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Log - Raw Races Inserted"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{bf633c1f-57fd-4c4f-9889-62152334eaa8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Log - Raw Races Inserted"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="Declare @BatchID int&#xA; , @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA; , @fileID = max(fileID) &#xA; From [Log].[v_ProcessStatus]&#xA; Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;  @Source =  'Races.dtsx',&#xA;  @LogTableID = 1000,&#xA;  @LogTableName = '[Raw].[Races]', &#xA;  @LogBatchID = @BatchID,&#xA;  @LogFileID = @fileID, &#xA;  @ErrorFlag = 0,&#xA;  @Msg = 'Races File Loaded to [Raw]';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Log - Start Races Load"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1E7EB7B6-B19D-4BF2-A05B-565024C1CAC3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Log - Start Races Load"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="Declare @BatchID int&#xA;&#x9;, @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA;&#x9;, @fileID = max(fileID) &#xA;&#x9;From [Log].[v_ProcessStatus]&#xA;&#x9;Where [Filetype] = 2;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;&#x9;&#x9;@Source =  'Races.dtsx',&#xA;&#x9;&#x9;@LogTableID = 1000,&#xA;&#x9;&#x9;@LogTableName = '[Bulk].[Races]',&#x9;&#xA;&#x9;&#x9;@LogBatchID = @BatchID,&#xA;&#x9;&#x9;@LogFileID = @fileID,&#x9;&#xA;&#x9;&#x9;@ErrorFlag = 0,&#xA;&#x9;&#x9;@Msg = 'Starting load for Races';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Races tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8732AC9D-AD4A-47D6-8BFE-A9F395DF61B2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Races tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="Exec [Util].[TruncateTables] @Schema = 'ALL', @TableID = 1000" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Status - File - 5"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3500df1f-62a8-4d80-b785-6032e00160a0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Status - File - 5"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="EXEC [Log].[UpdateProcessStatus] @BatchFileFull = 'File',  @Status = 5, @File = 1&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Status - File - 6"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1d14b82a-8927-4e5e-8c14-e6bab1d83f93}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Status - File - 6"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:SqlStatementSource="EXEC [Log].[UpdateProcessStatus] @BatchFileFull = 'File',  @Status = 6, @File = 1&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{36221BCF-113C-41E8-9B8E-0FBAB596AFDF}"
+      DTS:From="Package\Log - Start Races Load"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Truncate Races tables" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{BE4401E4-591D-4F14-A4E9-13E7CBC8FF76}"
+      DTS:From="Package\Truncate Races tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Data Flow - Insert Bulk - Races" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{C8670DBA-6EF0-4345-80E3-44D400DAF2ED}"
+      DTS:From="Package\Data Flow - Insert Bulk - Races"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Log - Bulk Races Loaded" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{5AD8E9DF-7D05-496B-8BEE-A23A2719DAFD}"
+      DTS:From="Package\Update Status - File - 5"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Insert Raw - Races" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{E87728F6-DFB1-4399-BDE5-24ACDB5E176B}"
+      DTS:From="Package\Log - Bulk Races Loaded"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Update Status - File - 5" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{E6CA2247-E307-4666-867C-CC3A1C58E87D}"
+      DTS:From="Package\Insert Raw - Races"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Log - Raw Races Inserted" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{F488703D-711A-44C7-8F14-9AE978B49D67}"
+      DTS:From="Package\Log - Raw Races Inserted"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Update Status - File - 6" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -1463,68 +1637,248 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task"
-          TopLeft="147,119" />
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
-  <TaskHost
-    design-time-name="Package\Data Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+          Size="226,42"
+          Id="Package\Data Flow - Insert Bulk - Races"
+          TopLeft="300,120" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="160.5,101.5" />
+          Size="208,42"
+          Id="Package\Log - Start Races Load"
+          TopLeft="32,43" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="145,9" />
+          Size="206,42"
+          Id="Package\Truncate Races tables"
+          TopLeft="36,113" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="220.5,51">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="137.5,85">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="25.5,50.5"
+              EndConnector="0,28"
               Start="0,0"
-              End="25.5,43">
+              End="0,20.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.25"
-                    Point2="0,25.25"
-                    Point3="4,25.25" />
-                  <mssgle:LineSegment
-                    End="21.5,25.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="21.5,25.25"
-                    Point2="25.5,25.25"
-                    Point3="25.5,29.25" />
-                  <mssgle:LineSegment
-                    End="25.5,43" />
+                    End="0,20.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="242,137.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58,0"
+              Start="0,0"
+              End="50.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="50.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Insert Raw - Races"
+          TopLeft="306,286" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Log - Bulk Races Loaded"
+          TopLeft="565,123" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="526,142.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39,0"
+              Start="0,0"
+              End="31.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="31.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Update Status - File - 5"
+          TopLeft="563,197" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="660,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="657.5,239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-263,47"
+              Start="0,0"
+              End="-263,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="-4,23.5" />
+                  <mssgle:LineSegment
+                    End="-259,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-259,23.5"
+                    Point2="-263,23.5"
+                    Point3="-263,27.5" />
+                  <mssgle:LineSegment
+                    End="-263,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="217,42"
+          Id="Package\Log - Raw Races Inserted"
+          TopLeft="564,283" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="483,305.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81,0"
+              Start="0,0"
+              End="73.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="73.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Update Status - File - 6"
+          TopLeft="573,361" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="670,325">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow - Insert Bulk - Races">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow - Insert Bulk - Races\OLE DB Destination"
+          TopLeft="131.5,100.5" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow - Insert Bulk - Races\Flat File Source"
+          TopLeft="145,9" />
+        <EdgeLayout
+          Id="Package\Data Flow - Insert Bulk - Races.Paths[Flat File Source Output]"
+          TopLeft="218.75,51">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.5"
+              Start="0,0"
+              End="0,42">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow - Insert Bulk - Races\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
