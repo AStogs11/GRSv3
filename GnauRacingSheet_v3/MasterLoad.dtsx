@@ -11,26 +11,18 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="MasterLoad"
   DTS:PackageType="5"
-  DTS:VersionBuild="99"
-  DTS:VersionGUID="{DF493D79-EE5B-48AC-8DCF-19DFC3384CFF}">
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{44F4D8AB-B0DE-43F9-B618-7AFE9CE29574}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ADO.NET GRSv3 Connection]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{E646813C-A4DF-4F8D-B486-41094F6DC95C}"
-      DTS:ObjectName="ADO.NET GRSv3 Connection">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=STOGS\STOGSSQLSERVER;Initial Catalog=GnauRacingDBv3;Integrated Security=True;Application Name=SSIS-MasterLoad-{E646813C-A4DF-4F8D-B486-41094F6DC95C}STOGS\STOGSSQLSERVER.GnauRacingDBv31;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[GnauRacingDBv3]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
       DTS:ObjectName="GnauRacingDBv3">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::ServerName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
