@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>GnauRacingSheet_v3</Name>
-    <LastWriteTime>2021-08-08T15:19:01.3361102Z</LastWriteTime>
+    <LastWriteTime>2021-11-25T22:29:24.7550728Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Races.dtsx</Name>
-      <LastWriteTime>2021-08-08T16:46:07.84029Z</LastWriteTime>
+      <LastWriteTime>2021-11-25T22:21:53.3153284Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>MasterLoad.dtsx</Name>
-      <LastWriteTime>2021-08-08T15:19:01.2932596Z</LastWriteTime>
+      <LastWriteTime>2021-08-09T00:01:03.816802Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Horse.dtsx</Name>
+      <LastWriteTime>2021-11-26T00:24:52.4921462Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
