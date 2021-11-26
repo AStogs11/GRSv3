@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="51"
-  DTS:VersionGUID="{7E423C67-E94C-4F90-A361-FA0C11C2D2F1}">
+  DTS:VersionBuild="52"
+  DTS:VersionGUID="{13F97B96-D3F4-43B1-B23B-2E02055C2549}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1565,7 +1565,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
-          SQLTask:SqlStatementSource="Declare @BatchID int&#xA;&#x9;, @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA;&#x9;, @fileID = max(fileID) &#xA;&#x9;From [Log].[v_ProcessStatus]&#xA;&#x9;Where [Filetype] = 2;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;&#x9;&#x9;@Source =  'Races.dtsx',&#xA;&#x9;&#x9;@LogTableID = 1000,&#xA;&#x9;&#x9;@LogTableName = '[Bulk].[Races]',&#x9;&#xA;&#x9;&#x9;@LogBatchID = @BatchID,&#xA;&#x9;&#x9;@LogFileID = @fileID,&#x9;&#xA;&#x9;&#x9;@ErrorFlag = 0,&#xA;&#x9;&#x9;@Msg = 'Starting load for Races';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Declare @BatchID int&#xA;&#x9;, @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA;&#x9;, @fileID = max(fileID) &#xA;&#x9;From [Log].[v_ProcessStatus]&#xA;&#x9;Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;&#x9;&#x9;@Source =  'Races.dtsx',&#xA;&#x9;&#x9;@LogTableID = 1000,&#xA;&#x9;&#x9;@LogTableName = '[Bulk].[Races]',&#x9;&#xA;&#x9;&#x9;@LogBatchID = @BatchID,&#xA;&#x9;&#x9;@LogFileID = @fileID,&#x9;&#xA;&#x9;&#x9;@ErrorFlag = 0,&#xA;&#x9;&#x9;@Msg = 'Starting load for Races';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1740,9 +1740,33 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="198,63"
+          Id="Package\Alter Races Partition Funtion and Scheme"
+          TopLeft="583,268" />
+        <NodeLayout
           Size="226,42"
           Id="Package\Data Flow - Insert Bulk - Races"
           TopLeft="300,120" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Insert History - Races"
+          TopLeft="312,541" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Insert Raw - Races"
+          TopLeft="324,387" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Log - Bulk Races Loaded"
+          TopLeft="579,124" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Log - History Races Inserted"
+          TopLeft="586,548" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Log - Raw Races Inserted"
+          TopLeft="579,386" />
         <NodeLayout
           Size="208,42"
           Id="Package\Log - Start Races Load"
@@ -1751,6 +1775,18 @@
           Size="206,42"
           Id="Package\Truncate Races tables"
           TopLeft="36,113" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Update Status - File - 5"
+          TopLeft="582,196" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Update Status - File - 6"
+          TopLeft="587,459" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Update Status - File - 7"
+          TopLeft="592,622" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="137.5,85">
@@ -1795,14 +1831,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Insert Raw - Races"
-          TopLeft="324,387" />
-        <NodeLayout
-          Size="195,42"
-          Id="Package\Log - Bulk Races Loaded"
-          TopLeft="579,124" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="526,143">
@@ -1825,10 +1853,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="189,42"
-          Id="Package\Update Status - File - 5"
-          TopLeft="582,196" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="679.25,238">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="676.5,166">
@@ -1851,10 +1897,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="203,42"
-          Id="Package\Log - Raw Races Inserted"
-          TopLeft="579,386" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="501,407.5">
@@ -1877,10 +1919,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="189,42"
-          Id="Package\Update Status - File - 6"
-          TopLeft="587,459" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
           TopLeft="681,428">
@@ -1903,24 +1941,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="198,63"
-          Id="Package\Alter Races Partition Funtion and Scheme"
-          TopLeft="583,268" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="679.25,238">
+          Id="Package.PrecedenceConstraints[Constraint 6 1]"
+          TopLeft="689.5,590">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30"
+              EndConnector="0,32"
               Start="0,0"
-              End="0,22.5">
+              End="0,24.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,24.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1963,17 +1997,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <AnnotationLayout
-          Text="Partitioning to be added in future if needed&#xD;&#xA;"
-          ParentId="Package"
-          FontInfo="{assembly:Null}"
-          Size="167,72"
-          Id="72ad51d5-f127-42d2-b222-afa966873220"
-          TopLeft="805,267" />
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Insert History - Races"
-          TopLeft="312,541" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
           TopLeft="681.5,501">
@@ -2008,36 +2031,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="213,42"
-          Id="Package\Log - History Races Inserted"
-          TopLeft="586,548" />
-        <NodeLayout
-          Size="189,42"
-          Id="Package\Update Status - File - 7"
-          TopLeft="592,622" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6 1]"
-          TopLeft="689.5,590">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32"
-              Start="0,0"
-              End="0,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
           TopLeft="493,565.5">
@@ -2060,6 +2053,13 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Partitioning to be added in future if needed&#xA;"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="167,72"
+          Id="72ad51d5-f127-42d2-b222-afa966873220"
+          TopLeft="805,267" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

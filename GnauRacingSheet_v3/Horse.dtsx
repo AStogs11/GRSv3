@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="STOGS"
   DTS:CreatorName="STOGS\Alex"
-  DTS:DTSID="{72831160-CE83-4284-8817-FE3C807D7EFC}"
+  DTS:DTSID="{CD3B4D57-516B-4CFD-A3D7-EFE8A1B9CA44}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.166"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Horse"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{13F97B96-D3F4-43B1-B23B-2E02055C2549}">
+  DTS:VersionBuild="96"
+  DTS:VersionGUID="{CE908324-E94B-46A6-A3D6-C4F43A6D60FA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[GnauRacingDBv3]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+      DTS:DTSID="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
       DTS:ObjectName="GnauRacingDBv3">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -32,7 +32,7 @@
       DTS:refId="Package.ConnectionManagers[Races]"
       DTS:CreationName="FLATFILE"
       DTS:Description="(File1)"
-      DTS:DTSID="{D06C2E48-4111-44F8-ADE4-6B4FF4AD6AE7}"
+      DTS:DTSID="{082B6EF3-B44D-4EF1-B167-2688516C5295}"
       DTS:ObjectName="Races">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -51,7 +51,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{8E511764-3B75-40FF-A074-D28AF0D81029}"
+              DTS:DTSID="{80DADB0F-0B85-4A6B-8914-995BDB7F9133}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -60,7 +60,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{ABA651DF-42CA-4F16-8AFA-72F8B663E8BC}"
+              DTS:DTSID="{307F4317-2567-4D93-8801-B6E314175A55}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -69,7 +69,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{81999B7F-287A-4060-B210-D7AA018E3844}"
+              DTS:DTSID="{8AD1A91A-B7BC-4728-B6B9-E35D12FDEFFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -78,7 +78,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{40D6003A-A9EB-4CBA-8176-3338B74F2152}"
+              DTS:DTSID="{CF905046-4880-41DE-8FE2-8C145D6BAD88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 4"
-              DTS:DTSID="{C1A08F6E-B5EC-4A49-97E0-7C44A8FF51C7}"
+              DTS:DTSID="{8F4AED8B-950C-4540-93AD-A13FB7702162}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 5"
-              DTS:DTSID="{2BCACA4C-A306-4746-98F9-F9521BAFAA05}"
+              DTS:DTSID="{B38AB5C8-09EA-4B26-96A3-57C109ADA3A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +105,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 6"
-              DTS:DTSID="{BC2343D8-9BE9-44F7-B50C-1F40F2FC728C}"
+              DTS:DTSID="{9C8D129A-0BB1-4657-AC0F-0A867DAD82ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{15969E46-B873-4EAD-8219-09EF0BF95CDB}"
+              DTS:DTSID="{BCF3B104-8BFC-4C57-8F12-53A3FE9A8DA8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 8"
-              DTS:DTSID="{1F653A09-5FA4-4E98-9C1D-2F63BBA15A20}"
+              DTS:DTSID="{4E4106A5-9597-4893-A06D-ABC6C55279DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 9"
-              DTS:DTSID="{A7AFDA47-C0BB-461B-8824-DEA4478516CA}"
+              DTS:DTSID="{81963A9A-CCC6-48FF-AB97-78F779366027}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -141,7 +141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 10"
-              DTS:DTSID="{2D6AC61B-1938-481A-950E-E4EE37A0823C}"
+              DTS:DTSID="{83F1F17F-C349-4D02-ADCA-C7B924BA0184}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -150,7 +150,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 11"
-              DTS:DTSID="{DF408EA3-2608-461C-8DA8-C3C299672410}"
+              DTS:DTSID="{FB925B07-AE36-4C8A-9181-C0F47DCA5ABB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -159,7 +159,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 12"
-              DTS:DTSID="{A61E5DBD-64D0-42A9-9F9C-2701693D4E68}"
+              DTS:DTSID="{EAA44A37-C8F5-4A65-AEE7-539F33D3C033}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -168,7 +168,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 13"
-              DTS:DTSID="{74196C45-D453-4251-BB96-497FB738C4A7}"
+              DTS:DTSID="{817696CC-A94B-4E91-B772-0147A15EF160}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -177,7 +177,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 14"
-              DTS:DTSID="{8487E5A9-2D6E-44FC-8148-1704F6EBF353}"
+              DTS:DTSID="{CC7CBEC0-0D1C-4282-B62E-5189A2F644AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -186,7 +186,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 15"
-              DTS:DTSID="{CB7319D2-AC28-46C4-94BE-3125C9514E27}"
+              DTS:DTSID="{EF51C808-45CE-4881-A403-ADC9CC654476}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -195,7 +195,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 16"
-              DTS:DTSID="{F8677395-F293-4D7D-8E3D-92E4A0C54432}"
+              DTS:DTSID="{1205A2C0-266C-4822-A74E-AF5D1273E26B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,7 +204,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 17"
-              DTS:DTSID="{6FB6716B-66A4-4E5E-8DFD-40510EBC74D1}"
+              DTS:DTSID="{BA7F2D4A-A2C6-41F6-8C72-AB3C5CCB94FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,7 +213,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 18"
-              DTS:DTSID="{4C91F152-56DC-4AEF-995B-54FDB1204CC6}"
+              DTS:DTSID="{AE58FE36-D198-4A35-B8E5-29975297A073}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 19"
-              DTS:DTSID="{6E43AE3C-495F-43FF-869A-768872324716}"
+              DTS:DTSID="{886F803A-9C0D-46D0-8BDC-1F4E4471F7C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -231,7 +231,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 20"
-              DTS:DTSID="{BFDE1D1C-D247-48F5-91C9-E8517A9F5593}"
+              DTS:DTSID="{059056B7-C03B-4B60-BE1F-437B3BCE80FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +240,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 21"
-              DTS:DTSID="{77D9F258-0828-487A-B992-15B5C0E0F2FE}"
+              DTS:DTSID="{4BAABCCC-6B1D-481F-873D-B4E172E36C5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 22"
-              DTS:DTSID="{B132E69F-A189-4786-BD1D-F040EFD40B55}"
+              DTS:DTSID="{2CD65479-B793-42EB-A15F-CD592E2F40B8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -261,7 +261,7 @@
       DTS:CreationName=""
       DTS:DataType="8"
       DTS:Description="Archive Folder for Downloaded files"
-      DTS:DTSID="{1E06A0EA-1640-4B5C-8EB5-F451633EE606}"
+      DTS:DTSID="{2571C1B1-D41C-45BC-8A58-8B5883099542}"
       DTS:ObjectName="Archive_Folder">
       <DTS:Property
         DTS:DataType="8"
@@ -271,7 +271,7 @@
       DTS:CreationName=""
       DTS:DataType="8"
       DTS:Description="Data Folder for Downloaded files"
-      DTS:DTSID="{DBDE901B-251E-4DE3-AAF8-856D2BA1E3E2}"
+      DTS:DTSID="{083C3D1F-BD5D-47C0-9756-89F018E69222}"
       DTS:ObjectName="Data_Folder">
       <DTS:Property
         DTS:DataType="8"
@@ -281,21 +281,84 @@
       DTS:CreationName=""
       DTS:DataType="8"
       DTS:Description="Drop Folder for Downloaded files"
-      DTS:DTSID="{50AA0AAC-3384-41B0-B084-E9D922416005}"
+      DTS:DTSID="{B8D7AB27-A289-4336-A7E3-5E2E8AB0DA92}"
       DTS:ObjectName="Drop_Folder">
       <DTS:Property
         DTS:DataType="8"
         DTS:Name="ParameterValue">C:\Users\Alex\Desktop\Handicap_data\Drop\\</DTS:Property>
     </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{32C592DC-4E17-40A9-BD31-324ECC5B3330}"
+      DTS:ObjectName="Parameter">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
   </DTS:PackageParameters>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EAA4899C-FD97-40E4-ACA6-336FF4C3CCAC}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;[Bulk].[&quot;+ @[System::PackageName]+&quot;]&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LogTableName">
+      <DTS:VariableValue
+        DTS:DataType="8">[Bulk].[Horse]</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CB0D125A-95BB-457F-83EE-4B7E83B8D1EB}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Starting load for &quot;+ @[System::PackageName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="msg">
+      <DTS:VariableValue
+        DTS:DataType="8">Starting load for Horse</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{60C34AC2-7921-4C1F-8235-5E9EDC054FBE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Loading &quot;+ @[System::PackageName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Process">
+      <DTS:VariableValue
+        DTS:DataType="8">Loading Horse</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{52714BE5-B89A-458A-9AC1-A10B4311CE86}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;SSIS - &quot;+@[System::PackageName]+&quot;.dtsx&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Source">
+      <DTS:VariableValue
+        DTS:DataType="8">SSIS - Horse.dtsx</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5A86DE70-CAF5-4329-960F-BB193241D1C5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TableID">
+      <DTS:VariableValue
+        DTS:DataType="8">2000</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Alter Races Partition Funtion and Scheme"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:Disabled="True"
-      DTS:DTSID="{1C306B92-C1F9-46D7-A90E-36AD2ECF464C}"
+      DTS:DTSID="{D7C0D01D-A7FC-4AC6-98C2-36715069F9E4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Alter Races Partition Funtion and Scheme"
@@ -304,7 +367,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="EXEC [Util].[CreateAlterPartitions] @TableID = 1000, @Execute = 1, @NewPartition = 0 " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -312,7 +375,7 @@
       DTS:refId="Package\Data Flow - Insert Bulk - Races"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{B6FC4C18-5B8E-4FE8-983C-A54D1F497BB0}"
+      DTS:DTSID="{286D8309-F6EA-4C00-A308-1162C71C15A9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow - Insert Bulk - Races"
@@ -1470,7 +1533,7 @@
       DTS:refId="Package\Insert History - Races"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Insert History"
-      DTS:DTSID="{e9e935ca-306e-430f-9280-561a32de29d3}"
+      DTS:DTSID="{4784E0F0-AD86-4D48-8AC4-88E5A09C3E96}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Insert History - Races"
@@ -1479,7 +1542,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="Exec [util].[InsertHistory] @Tableid = 1000" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1487,7 +1550,7 @@
       DTS:refId="Package\Insert Raw - Races"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Insert Raw"
-      DTS:DTSID="{93E02A9C-F5E2-4D2D-BD07-EB1FAD6C283F}"
+      DTS:DTSID="{97E91739-A847-44DF-A658-2F2267C2BB36}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Insert Raw - Races"
@@ -1496,7 +1559,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="Exec [util].[InsertRaw] @Tableid = 1000" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1504,7 +1567,7 @@
       DTS:refId="Package\Log - Bulk Races Loaded"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{0a0beb4e-8f40-45a2-a91c-c0ca445bc6e0}"
+      DTS:DTSID="{026BBCA6-52A5-4764-9B3B-901DF03B34DC}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Log - Bulk Races Loaded"
@@ -1513,7 +1576,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="Declare @BatchID int&#xA; , @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA; , @fileID = max(fileID) &#xA; From [Log].[v_ProcessStatus]&#xA; Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;  @Source =  'Races.dtsx',&#xA;  @LogTableID = 1000,&#xA;  @LogTableName = '[Bulk].[Races]', &#xA;  @LogBatchID = @BatchID,&#xA;  @LogFileID = @fileID, &#xA;  @ErrorFlag = 0,&#xA;  @Msg = 'Races File Loaded to [Bulk]';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1521,7 +1584,7 @@
       DTS:refId="Package\Log - History Races Inserted"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{f7979035-3351-4299-9494-11adb66501a5}"
+      DTS:DTSID="{05DD6763-FCE4-40BF-8007-9BC1FB78087C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Log - History Races Inserted"
@@ -1530,7 +1593,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="Declare @BatchID int&#xA; , @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA; , @fileID = max(fileID) &#xA; From [Log].[v_ProcessStatus]&#xA; Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;  @Source =  'Races.dtsx',&#xA;  @LogTableID = 1000,&#xA;  @LogTableName = '[History].[Races]', &#xA;  @LogBatchID = @BatchID,&#xA;  @LogFileID = @fileID, &#xA;  @ErrorFlag = 0,&#xA;  @Msg = 'Races File Loaded to [History]';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1538,7 +1601,7 @@
       DTS:refId="Package\Log - Raw Races Inserted"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{bf633c1f-57fd-4c4f-9889-62152334eaa8}"
+      DTS:DTSID="{E5F4B517-2EF9-4474-976F-ABC62761E83D}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Log - Raw Races Inserted"
@@ -1547,15 +1610,65 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="Declare @BatchID int&#xA; , @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA; , @fileID = max(fileID) &#xA; From [Log].[v_ProcessStatus]&#xA; Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;  @Source =  'Races.dtsx',&#xA;  @LogTableID = 1000,&#xA;  @LogTableName = '[Raw].[Races]', &#xA;  @LogBatchID = @BatchID,&#xA;  @LogFileID = @fileID, &#xA;  @ErrorFlag = 0,&#xA;  @Msg = 'Races File Loaded to [Raw]';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Log - Start Horse Load"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{88d432e1-efad-4f4f-93b1-7609bfe7a9b0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:ExecValue=""
+      DTS:ExecValueType="8"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Log - Start Horse Load"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
+          SQLTask:SqlStatementSource="&#xA;&#xA;&#xA;[Log].[InsertEvent] @Process = ?, @Source = ?,  @LogTableName = ?, @Msg = ?, @LogTableID = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@Process"
+            SQLTask:DtsVariableName="User::Process"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="100" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@Source"
+            SQLTask:DtsVariableName="User::Source"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="100" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@LogTableName"
+            SQLTask:DtsVariableName="User::LogTableName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="100" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@Msg"
+            SQLTask:DtsVariableName="User::msg"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="500" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@LogTableID"
+            SQLTask:DtsVariableName="User::TableID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="4" />
+        </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Log - Start Races Load"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{1E7EB7B6-B19D-4BF2-A05B-565024C1CAC3}"
+      DTS:DTSID="{8878E97D-832E-4263-A48B-43CD5206D22B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Log - Start Races Load"
@@ -1564,15 +1677,15 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
-          SQLTask:SqlStatementSource="Declare @BatchID int&#xA;&#x9;, @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA;&#x9;, @fileID = max(fileID) &#xA;&#x9;From [Log].[v_ProcessStatus]&#xA;&#x9;Where [Filetype] = 1;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;&#x9;&#x9;@Source =  'Races.dtsx',&#xA;&#x9;&#x9;@LogTableID = 1000,&#xA;&#x9;&#x9;@LogTableName = '[Bulk].[Races]',&#x9;&#xA;&#x9;&#x9;@LogBatchID = @BatchID,&#xA;&#x9;&#x9;@LogFileID = @fileID,&#x9;&#xA;&#x9;&#x9;@ErrorFlag = 0,&#xA;&#x9;&#x9;@Msg = 'Starting load for Races';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
+          SQLTask:SqlStatementSource="Declare @BatchID int&#xA;&#x9;, @FileID int&#xA;&#xA;Select @BatchID = Max(batchID)&#xA;&#x9;, @fileID = max(fileID) &#xA;&#x9;From [Log].[v_ProcessStatus]&#xA;&#x9;Where [Filetype] = 2;&#xA;&#xA;EXEC [Log].[InsertEvent] @Process = 'Loading Races',&#xA;&#x9;&#x9;@Source =  'Horse.dtsx',&#xA;&#x9;&#x9;@LogTableID = 2000,&#xA;&#x9;&#x9;@LogTableName = '[Bulk].Horse]',&#x9;&#xA;&#x9;&#x9;@LogBatchID = @BatchID,&#xA;&#x9;&#x9;@LogFileID = @fileID,&#x9;&#xA;&#x9;&#x9;@ErrorFlag = 0,&#xA;&#x9;&#x9;@Msg = 'Starting load for Horse'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Truncate Races tables"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8732AC9D-AD4A-47D6-8BFE-A9F395DF61B2}"
+      DTS:DTSID="{5842D12C-CB9E-4DCF-AF92-F0A761421077}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Races tables"
@@ -1581,15 +1694,26 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
-          SQLTask:SqlStatementSource="Exec [Util].[TruncateTables] @Schema = 'ALL', @TableID = 1000" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
+          SQLTask:SqlStatementSource="Exec [Util].[TruncateTables] @Schema = 'ALL', @TableID = TableID"
+          SQLTask:ResultType="ResultSetType_XML" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::TableID" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::TableID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Update Status - File - 5"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{3500df1f-62a8-4d80-b785-6032e00160a0}"
+      DTS:DTSID="{ECABD025-A413-4E04-BB89-6014F0D9396F}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Status - File - 5"
@@ -1598,7 +1722,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="EXEC [Log].[UpdateProcessStatus] @BatchFileFull = 'File',  @Status = 5, @File = 1&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1606,7 +1730,7 @@
       DTS:refId="Package\Update Status - File - 6"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{1d14b82a-8927-4e5e-8c14-e6bab1d83f93}"
+      DTS:DTSID="{8F8296EB-BC57-447C-B7FE-B1D447E5880F}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Status - File - 6"
@@ -1615,7 +1739,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="EXEC [Log].[UpdateProcessStatus] @BatchFileFull = 'File',  @Status = 6, @File = 1&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1623,7 +1747,7 @@
       DTS:refId="Package\Update Status - File - 7"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{5c3133b0-b3df-42e2-a9e5-1edd25792c43}"
+      DTS:DTSID="{EB487CF1-CC44-406F-BC7A-9365704A286C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Status - File - 7"
@@ -1632,7 +1756,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F39F786A-D1B1-42C4-B031-131BD66EE43E}"
+          SQLTask:Connection="{8B731C9F-9354-4B2D-9DC7-02726014801A}"
           SQLTask:SqlStatementSource="EXEC [Log].[UpdateProcessStatus] @BatchFileFull = 'File',  @Status = 7, @File = 1&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1641,7 +1765,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{36221BCF-113C-41E8-9B8E-0FBAB596AFDF}"
+      DTS:DTSID="{AA92DDBF-0C14-4622-9FFA-E8575D731C7D}"
       DTS:From="Package\Log - Start Races Load"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1649,7 +1773,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{BE4401E4-591D-4F14-A4E9-13E7CBC8FF76}"
+      DTS:DTSID="{6FA1349A-9032-4EDE-8477-C830AAF9744C}"
       DTS:From="Package\Truncate Races tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -1657,7 +1781,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{C8670DBA-6EF0-4345-80E3-44D400DAF2ED}"
+      DTS:DTSID="{0778FD9A-C700-45C8-A01D-0910BEC3B2E1}"
       DTS:From="Package\Data Flow - Insert Bulk - Races"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -1665,7 +1789,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{A372B49A-0CF6-411C-BA14-786CAE300840}"
+      DTS:DTSID="{910B152E-3E9A-42C8-914A-008964CC0D95}"
       DTS:From="Package\Update Status - File - 5"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -1673,7 +1797,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{E87728F6-DFB1-4399-BDE5-24ACDB5E176B}"
+      DTS:DTSID="{4AA22C8B-6522-4AFF-AB20-BA11302459B9}"
       DTS:From="Package\Log - Bulk Races Loaded"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
@@ -1681,7 +1805,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{E6CA2247-E307-4666-867C-CC3A1C58E87D}"
+      DTS:DTSID="{1A6AAC69-D0FD-4CDA-85D7-1AAE9F719BD4}"
       DTS:From="Package\Insert Raw - Races"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
@@ -1689,7 +1813,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
       DTS:CreationName=""
-      DTS:DTSID="{F488703D-711A-44C7-8F14-9AE978B49D67}"
+      DTS:DTSID="{1D435D6C-E4A3-4322-8C91-AD8242982CD8}"
       DTS:From="Package\Log - Raw Races Inserted"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6"
@@ -1697,7 +1821,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6 1]"
       DTS:CreationName=""
-      DTS:DTSID="{e383440c-46c1-4806-b962-510daec6c712}"
+      DTS:DTSID="{57ED401F-BE94-4F87-9692-63E73881972F}"
       DTS:From="Package\Log - History Races Inserted"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6 1"
@@ -1705,7 +1829,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
       DTS:CreationName=""
-      DTS:DTSID="{D7C516B5-6915-454E-AA64-C3C0194D5ADD}"
+      DTS:DTSID="{E87638AC-5DF5-41AD-9B6B-C71B3C07162E}"
       DTS:From="Package\Alter Races Partition Funtion and Scheme"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 7"
@@ -1713,7 +1837,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
       DTS:CreationName=""
-      DTS:DTSID="{FCABA91F-7ECE-41D4-B30E-C0A6336E37B8}"
+      DTS:DTSID="{DCA86EB1-C5C1-4EF1-88A7-EAF92F4AF820}"
       DTS:From="Package\Update Status - File - 6"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 8"
@@ -1721,7 +1845,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
       DTS:CreationName=""
-      DTS:DTSID="{A7E5849D-567E-4672-8B23-2D8639961CC0}"
+      DTS:DTSID="{D16D1772-7EAD-4667-9CD1-2FE4B4AF6373}"
       DTS:From="Package\Insert History - Races"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 9"
@@ -1770,11 +1894,11 @@
         <NodeLayout
           Size="208,42"
           Id="Package\Log - Start Races Load"
-          TopLeft="32,43" />
+          TopLeft="31,42" />
         <NodeLayout
-          Size="206,42"
+          Size="183,42"
           Id="Package\Truncate Races tables"
-          TopLeft="36,113" />
+          TopLeft="35,112" />
         <NodeLayout
           Size="189,42"
           Id="Package\Update Status - File - 5"
@@ -1789,18 +1913,30 @@
           TopLeft="592,622" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="137.5,85">
+          TopLeft="135,84">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28"
+              EndConnector="-8.5,28"
               Start="0,0"
-              End="0,20.5">
+              End="-8.5,20.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.5" />
+                    End="0,10" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10"
+                    Point2="0,14"
+                    Point3="-4,14" />
+                  <mssgle:LineSegment
+                    End="-4.5,14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,14"
+                    Point2="-8.5,14"
+                    Point3="-8.5,18" />
+                  <mssgle:LineSegment
+                    End="-8.5,20.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1811,18 +1947,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="242,137.5">
+          TopLeft="218,133">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="58,0"
+              EndConnector="82,8"
               Start="0,0"
-              End="50.5,0">
+              End="74.5,8">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="50.5,0" />
+                    End="37,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37,0"
+                    Point2="41,0"
+                    Point3="41,4" />
+                  <mssgle:LineSegment
+                    End="41,4" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41,4"
+                    Point2="41,8"
+                    Point3="45,8" />
+                  <mssgle:LineSegment
+                    End="74.5,8" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2060,6 +2208,10 @@
           Size="167,72"
           Id="72ad51d5-f127-42d2-b222-afa966873220"
           TopLeft="805,267" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Log - Start Horse Load"
+          TopLeft="34,200" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2067,7 +2219,7 @@
     design-time-name="Package\Data Flow - Insert Bulk - Races">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Data Flow - Insert Bulk - Races\OLE DB Destination"
@@ -2095,7 +2247,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
